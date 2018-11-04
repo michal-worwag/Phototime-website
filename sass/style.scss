@@ -184,14 +184,16 @@ header {
   display: flex;
   justify-content: space-evenly;
   position: relative;
+  max-height: 100%;
   .phone {
-    margin-top: 146px;
+    margin-top: 144px;
     margin-left: 127px;
   }
   .design {
-    margin-left: 339px;
+    margin-right: 85px;
     max-width: 513px;
     margin-top: 144px;
+    padding-left: 330px;
     h3 {
       font-size: 18px;
       letter-spacing: 3px;
@@ -228,6 +230,21 @@ header {
       }
     }
   }
+  .angle {
+    margin-top: 44px;
+    p {
+      font-size: 12px;
+      letter-spacing: 2px;
+      line-height: 22px;
+      color: $thirdFontColor;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    i {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+  }
 }
 
 // third section
@@ -237,6 +254,56 @@ header {
   background-color: $backgroundColor;
   position: relative;
   z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.communityAngle {
+  display: flex;
+  justify-content: flex-end;
+  i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+}
+
+.third {
+  display: flex;
+  justify-content: space-evenly;
+  .community {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 83px;
+    img {
+      width: 59px;
+      height: 59px;
+    }
+    h4 {
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 20px;
+      color: $thirdFontColor;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-top: 31px;
+      padding-bottom: 24px;
+    }
+    p {
+      width: 177px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: $thirdFontColor;
+      text-align: center;
+    }
+  }
+  .pictures {
+    img {
+      width: 370px;
+      height: 244px;
+    }
+  }
 }
 
 // fourth section
@@ -245,15 +312,185 @@ header {
   height: 790px;
   background-image: url(../images/main/Livello3.png);
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.fourth {
+  display: flex;
+  h2 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: $mainFontColor;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+  .input {
+    display: flex;
+    justify-content: center;
+    input {
+      width: 280px;
+      height: 60px;
+      border-radius: 3px;
+      border-width: 0;
+      &::placeholder {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: $thirdFontColor;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+    button {
+      width: 62px;
+      height: 62px;
+      border-radius: 3px;
+      background-color: $buttonColor;
+      border-width: 0;
+      cursor: pointer;
+      &:hover {
+        background-color: $thirdFontColor;
+        color: $mainFontColor;
+      }
+      i {
+        font-size: 20px;
+        color: $mainFontColor;
+      }
+    }
+  }
+}
 // fifth section
 
 .fifthContainer {
   height: 397px;
   background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.fifth {
+  display: flex;
+  .download {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 20px;
+      letter-spacing: 3px;
+      color: $thirdFontColor;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      width: 877px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      line-height: 22px;
+      color: $thirdFontColor;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+    .store {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.appleStore, .playStore {
+  width: 316px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    .storeBtn, .faApple, .faAndroid {
+      background-color: $thirdFontColor;
+      cursor: pointer;
+    }
+  }
+}
+.storeBtn {
+    width: 240px;
+    height: 56px;
+    border-radius: 3px;
+    background-color: #1abc9c;
+    border-width: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $mainFontColor;
+    font-weight: bold;
+
+}
+
+.faApple, .faAndroid {
+  width: 56px;
+  height: 56px;
+  border-radius: 3px;
+  background-color: $buttonColor;
+  color: $mainFontColor;
+  font-size: 24px;
+  border-width: 0;
+}
+
+
+// footer
 
 .footer {
   height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 23px;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: $thirdFontColor;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    span {
+      margin-right: 5px;
+      margin-left: 5px;
+      color: $buttonColor;
+      width: 3px;
+    }
+  }
+}
+
+//up button
+
+#up {
+  position: fixed;
+  bottom: 10px;
+  right: 5%;
+  left: 95%;
+  max-width: 40px;
+  width: 100%;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: $buttonColor;
+  border-radius: 4px;
+  padding: 5px;
+  z-index: 10;
+  &:hover {
+    background-color: $thirdFontColor;
+  }
+  i {
+    font-size: 16px;
+  }
 }

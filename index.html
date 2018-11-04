@@ -16,15 +16,15 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="container">
       <nav class="nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Photoapp</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#photoapp">Photoapp</a></li>
           <li><img src="./images/header/navbarPic.png" alt="Camera"></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Download</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#download">Download</a></li>
         </ul>
       </nav>
       <div class="slogan">
@@ -40,7 +40,7 @@
     </div>
   </header>
   <main>
-    <section class="firstContainer">
+    <section class="firstContainer" id="photoapp">
       <div class="container first">
           <div class="simplePhoto">
             <h3>Represent your life with a simple photo</h3>
@@ -53,7 +53,7 @@
           </div>
       </div>
     </section>
-    <section class="secondContainer">
+    <section class="secondContainer" id="design">
       <div class="container">
         <div class="second">
           <div class="phone">
@@ -61,33 +61,66 @@
           </div>
           <div class="design">
             <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi
                 ut aliquip ex ea commodo consequat.</p>
             <button>Learn more</button>
+            <div class="angle">
+              <p>01/05</p>
+              <i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="thirdContainer">
         <div class="container">
-          <div class="third">
 
+          <div class="communityAngle">
+            <i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i>
+          </div>
+          <div class="third">
+            <div class="community">
+              <img src="./images/main/Livello4.png" alt="">
+              <h4>Our community</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="pictures">
+              <img src="./images/main/Livello5.png" alt="">
+              <img src="./images/main/Livello6.png" alt="">
+            </div>
           </div>
         </div>
       </section>
       <section class="fourthContainer">
           <div class="container">
             <div class="fourth">
-
+              <div class="subscribe">
+                <h2>Subscribe to our community</h2>
+                <div class="input">
+                    <input type="email" placeholder="Your email" name="Your email" id=""><button><i class="fas fa-check"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="fifthContainer">
+        <section class="fifthContainer" id="download">
             <div class="container">
               <div class="fifth">
+                <div class="download">
+                  <h2>Download it</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="store">
+                    <div class="appleStore">
+                      <button class="storeBtn">Apple store</button><button class="faApple"><i class="fab fa-apple"></i></button>
+                    </div>
+                    <div class="playStore">
+                        <button class="storeBtn">Play store</button><button class="faAndroid"><i class="fab fa-android"></i></button>
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -95,9 +128,20 @@
   </main>
   <footer class="footer">
     <div class="container">
-
+      <div class="copyright">
+        <div>
+          <ul>
+            <li><a href="">Credits</a><span>|</span></li>
+            <li><a href="">Privacy</a><span>|</span></li>
+            <li><a href="">Our team</a></li>
+          </ul>
+          <p>Copyright by phototime - all rights reserved</p>
+        </div>
+        <img src="./images/main/Livello4.png" alt="">
+      </div>
     </div>
   </footer>
+  <button id="up"><a href="#home" style="color: white"><i class="fas fa-arrow-up"></i></a></button>
 </body>
 
 </html>
